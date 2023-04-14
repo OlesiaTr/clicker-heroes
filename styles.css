@@ -1,0 +1,175 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Baloo Bhai 2', cursive;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'] {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus {
+  border-color: #1a1a1a;
+}
+
+button {
+  font-family: inherit;
+}
+
+button[type='submit'] {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Game area styles */
+#game-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.enemy {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#level-1-enemy {
+  background-image: url('enemy1.jpg');
+}
+
+#level-2-enemy {
+  background-image: url('enemy2.jpg');
+}
+
+#level-3-enemy {
+  background-image: url('enemy3.jpg');
+}
+
+#level-4-enemy {
+  background-image: url('enemy4.jpg');
+}
+
+#level-5-enemy {
+  background-image: url('enemy5.jpg');
+}
+
+.clicker {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clicker p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#clicker-button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#clicker-button:hover {
+  background-color: #333;
+}
+
+/* Score area styles */
+#score-area {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#score-display {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* Message area styles */
+#message-area {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
