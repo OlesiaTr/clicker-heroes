@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>Clicker Heroes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/modal.css">
+
+</head>
+
+<body class="no-scroll">
+
+  <header>
+    <h1>Clicker Game</h1>
+  </header>
+  <main>
+    <div id="game-area">
+      <div class="enemy" id="level-1-enemy"></div>
+      <div class="clicker">
+        <p>Click the button to defeat the enemy and earn points!</p>
+        <button id="clicker-button">Click Me!</button>
+      </div>
+      <div class="enemy" id="level-2-enemy"></div>
+      <div class="enemy" id="level-3-enemy"></div>
+      <div class="enemy" id="level-4-enemy"></div>
+      <div class="enemy" id="level-5-enemy"></div>
+    </div>
+    <div id="score-area">
+      <p>Your score: <span id="score-display">0</span></p>
+    </div>
+    <div id="message-area"></div>
+  </main>
+
+  <!-- Modal window -->
+  <div data-modal></div>
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
